@@ -7,22 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-<form action="index.php" method="post">
-    <input type="text" name="za" id="za">
-    <input type="number" name="zc" id="zc">
-    <input type="submit" value="Oblicz">
-</form>
 <?php
-    if(!empty($_POST['za'])){
-        $a = $_POST['za'];
-        $c = $_POST['zc'];
-        echo "<ol>";
-        for($ile = 0; $ile<$c; $ile++){
-            echo "<li>".$a."</li>";
-        }
-        echo "</ol>";
-    }
-    
+$idk = rand(1,20);
+echo '<form action="game.php?idk='.$idk.'&n=0" method="post">';
+echo '<input type="submit" value="Rozpocznij Grę">';
+echo '</form>';
+
 ?>
 </body>
 </html>
