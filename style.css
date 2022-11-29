@@ -3,7 +3,7 @@
     font-family: 'Raleway', sans-serif;
 }
 body{
-    background-color: turquoise;
+    background-color: rgb(90, 90, 90);
 }
 #wrapper{  
     height: 100%;
@@ -52,34 +52,39 @@ body{
 		height:35px;
 	}
 
-  .style-btn {
-    color: white;
-    width:150px;
-    height:35px;
-    border-radius:5px;
-    transition-property:background-color,border-radius,width,height,color;
-    transition-duration:0.215s;
-    transition-delay: 0.215s;
-    text-align:center;
-    border: none;
-    float: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
-    background-color:transparent;
-    }
-  
-  .style-btn:hover {
-      background-color:rgba(0, 0, 0, 0.5);
-      border-radius:15px;
-      color:rgb(255, 255, 255);
-      width:180px;
-      height:35px;
-    }
+.style-btn {
+  color: white;
+  width:150px;
+  height:35px;
+  border-radius:5px;
+  transition-property:background-color,border-radius,width,height,color;
+  transition-duration:0.215s;
+  transition-delay: 0.215s;
+  text-align:center;
+  border: none;
+  float: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  background-color:transparent;
+  }
 
-    .text{
-      position: absolute;
-      transform: translateY(50px);
-      background-color: rgba(255, 0, 0, 0.50);
-      border-radius: 25px;
-      padding: 10px;
-    }
+.style-btn:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:15px;
+    color:rgb(255, 255, 255);
+    width:180px;
+    height:35px;
+  }
+
+.text{
+  position: static;
+  transform: translateY(50px) !important;
+  background-color: rgba(255, 0, 0, 0.50);
+  border-radius: 25px;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
+.text i{
+  font-size: 15px;
+}

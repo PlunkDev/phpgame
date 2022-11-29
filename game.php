@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/910564653c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -34,14 +35,14 @@ if($odp==$idk){
 } else{
 if($n<5){
 echo '<form action="game.php?idk='.$idk.'&n='.($n+1).'" method="post">';
-echo '<input type="number" class="style" name="odp" id="odp"></br></br>';
+echo '<input type="number" class="style" name="odp" id="odp" required></br></br>';
 echo '<input type="submit" class="style-btn" value="Zgadnij">';
 echo '</form>';
 if($n!=0){
     if($odp>$idk){
-        echo "<p class='text'>Nie udało ci się! Niższa Liczba!</p>";
+        echo "<p class='text'><i class='fa-solid fa-circle-xmark'></i> Nie udało ci się! Niższa Liczba!</p>";
     } else{
-        echo "<p class='text'>Nie udało ci się! Wyższa Liczba!</p>";
+        echo "<p class='text'><i class='fa-solid fa-circle-xmark'></i> Nie udało ci się! Wyższa Liczba!</p>";
     }
 }
 }}
